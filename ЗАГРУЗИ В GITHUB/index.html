@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>RAP DJ SET</title>
+<link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><link rel="icon" href="icons/192.png"><meta name="theme-color" content="#0c0b12"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="RAP DJ SET"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="description" content="Помощник диджея для хип-хопа и трэпа: переходы, сеты, обучалка.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/motion.css">
+</head><body><div class="w">
+<header><div class="logo">RAP DJ <i>SET</i></div><div class="top"><span id="plan"></span><span id="auth"></span><button class="sm" id="lg" onclick="setLang()" aria-label="Language"></button><button class="sm" id="bg" onclick="tog()"></button></div></header>
+<nav id="nav"></nav><div class="demo" id="dm">DEMO — данные: BPM, тональность и оценки — условные примеры для теста, не реальные значения. Обложки и аудио не используются.</div>
+<main id="app" tabindex="-1"></main><footer id="ft" style="color:var(--mu);font-size:12px;padding:28px 0 12px">RAP DJ SET — независимый проект. Не связан с упомянутыми артистами и сервисами; названия принадлежат их владельцам. Музыки на сайте нет, BPM и тональности в demo-режиме — это примеры.</footer></div><div id="prog" aria-hidden="true"></div><div id="toast" role="status" aria-live="polite"></div><div class="fx" id="fx" aria-hidden="true"></div><div id="tp" role="tooltip"></div><div id="build" aria-hidden="true"><svg viewBox="0 0 120 200" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"><g class="glow"><circle cx="60" cy="42" r="34" fill="var(--ac)" opacity=".12" stroke="none"/></g><g class="pt" data-s="1"><ellipse cx="60" cy="188" rx="30" ry="5" stroke="#9a93b2"/></g><g class="pt" data-s="2"><path d="M60 186V108M60 186L40 194M60 186L80 194" stroke="#9a93b2"/></g><g class="pt" data-s="3"><path d="M38 72Q38 104 60 104Q82 104 82 72" stroke="#9a93b2"/><circle cx="60" cy="104" r="3" stroke="var(--hot)"/></g><g class="pt" data-s="4"><rect x="45" y="50" width="30" height="58" rx="13" stroke="#f1eef8" fill="#0c0b12"/><path d="M50 88H70" stroke="#2a2638"/></g><g class="pt" data-s="5"><ellipse cx="60" cy="40" rx="22" ry="24" stroke="#f1eef8" fill="#0c0b12"/><path d="M42 32H78M40 42H80M43 52H77M51 18V62M60 16V64M69 18V62" stroke="#9a93b2" opacity=".55"/></g><g class="pt" data-s="6"><path d="M45 66H75" stroke="var(--hot)" stroke-width="2.5"/><circle cx="60" cy="96" r="1.8" fill="var(--ok)" stroke="none"/></g><g class="pt" data-s="7"><path d="M60 190Q96 190 96 160Q96 136 76 134" stroke="var(--ac)" stroke-dasharray="3 4"/></g><g class="pt" data-s="8"><path d="M24 40A36 36 0 0 1 32 18M96 40A36 36 0 0 0 88 18" stroke="var(--ac)" opacity=".7"/><path d="M14 44A48 48 0 0 1 24 10M106 44A48 48 0 0 0 96 10" stroke="var(--hot)" opacity=".45"/></g></svg></div><datalist id="dl"></datalist>
+<script src="js/data.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/app.js"></script>
+<script src="js/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/auth.js"></script>
+</body></html>
