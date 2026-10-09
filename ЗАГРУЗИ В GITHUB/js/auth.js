@@ -6,7 +6,7 @@ EN.unshift(
   ['Вход через Google ещё не настроен: впиши ключи Supabase в js/config.js','Google sign-in is not set up yet: add the Supabase keys to js/config.js'],
   ['Не удалось открыть вход через Google','Could not open Google sign-in'],
   ['Ты вошёл как ','Signed in as '],['Ты вышел из аккаунта','You are signed out'],
-  ['Аккаунт: ','Account: ']
+  ['Аккаунт: ','Account: '],['Политика конфиденциальности','Privacy policy']
 );
 
 const AUTH={sb:null,user:null,plan:'free',ready:false,open:false,ret:/[?&]code=/.test(location.search)};
