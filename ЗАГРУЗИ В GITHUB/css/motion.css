@@ -155,3 +155,8 @@ html[data-dir=b]::view-transition-old(page){animation-name:vtob}html[data-dir=b]
 
 /* account menu */
 .authm{animation:up var(--d-m) var(--e-out)}
+/* PRO */
+.pro-wait .dot,#recb.rec .rdot{animation:blink 1s var(--e-io) infinite}
+.pro-ic{transition:transform var(--d-m) var(--e-out)}
+@media(hover:hover){.pro-f:hover .pro-ic{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){.pro-wait .dot,#recb.rec .rdot{animation:none!important}}
